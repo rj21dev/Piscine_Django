@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email sending form</title>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <form onsubmit="return false;">
+      <div>Firstname :<input id="firstname" required></div>
+      <div>Name :<input id="name" required></div>
+      <div>Age :<input id="age" type="number" required></div>
+      <div>Phone :<input id="phone" type="tel" required></div>
+      <div>Email :<input id="email" type="email" required></div>
+      <div>Student at 42? :<input id="student" type="checkbox" checked></div>
+      <div>
+        Male<input id="gender_male" name="gender" type="radio" value="Male" checked>
+        Female<input id="gender_female" name="gender" type="radio" value="Female">
+        Other<input id="gender_other" name="gender" type="radio" value="Other">
+      </div>
+      <div>
+	 	 <button type="submit" onclick="displayFormContents()">
+   		     Run that sexy Javascript!
+     	 </button>
+	  </div>
+    </form>
+  </body>
+</html>
