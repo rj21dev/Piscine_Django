@@ -1,6 +1,6 @@
 import sys
 
-def find_capital(val):
+def find_capital(key):
 	states = {
         "Oregon": "OR",
         "Alabama": "AL",
@@ -13,11 +13,11 @@ def find_capital(val):
         "NJ": "Trenton",
         "CO": "Denver"
     }
-	val = states.get(val)
-	if not val:
+	key = states.get(key)
+	if not key:
 		print('Unknown state')
 		return
-	print(capital_cities.get(val))
+	print(capital_cities.get(key))
 
 def process():
 	if len(sys.argv) == 2:
